@@ -1,215 +1,36 @@
-#!/usr/bin/env python3
-"""
-Mi Primera API FastAPI - Verificaci√≥n de Setup
-Desarrollador: [Tu nombre se llenar√° autom√°ticamente]
-"""
-
 from fastapi import FastAPI
-import os
-import sys
-from datetime import datetime
 
-# Crear instancia de FastAPI
-app = FastAPI(
-    title="Mi Primera API FastAPI",
-    description="API de verificaci√≥n para setup del bootcamp",
-    version="1.0.0"
-)
+# Crear la aplicaci√≥n (lo m√°s simple posible)
+app = FastAPI(title="Mi Primera API")
+
+# Endpoint 1: Hello World (OBLIGATORIO)
+@app.get("/")
+def hello_world():
+    return {"message": "¬°Mi primera API FastAPI!"}
+
+# Endpoint 2: Info b√°sica (OBLIGATORIO)
+@app.get("/info")
+def info():
+    return {"api": "FastAPI", "week": 1, "status": "running"}
+from fastapi import FastAPI
+
+app = FastAPI(title="Mi Primera API")
 
 @app.get("/")
-def home():
-    """Endpoint principal de verificaci√≥n"""
+def hello_world():
+    return {"message": "¬°Mi primera API FastAPI!"}
+
+@app.get("/info")
+def info():
+    return {"api": "FastAPI", "week": 1, "status": "running"}
+
+
+@app.get("/my-profile")
+def my_profile():
     return {
-        "message": "¬°Setup completado correctamente!",
-        "project": "FastAPI Bootcamp - Semana 1",
-        "timestamp": datetime.now().isoformat(),
-        "status": "‚úÖ Working perfectly"
+        "name": "Valery",           # Cambiar por tu nombre
+        "bootcamp": "FastAPI",
+        "week": 1,
+        "date": "2025",
+        "likes_fastapi": True              # ¬øTe gust√≥ FastAPI?
     }
-
-@app.get("/info/setup")
-def info_setup():
-    """Informaci√≥n del entorno de desarrollo"""
-    return {
-        "python_version": sys.version,
-        "python_path": sys.executable,
-        "working_directory": os.getcwd(),
-        "virtual_env": os.environ.get("VIRTUAL_ENV", "No detectado"),
-        "user": os.environ.get("USER", "No detectado"),
-        "hostname": os.environ.get("HOSTNAME", "No detectado")
-    }
-
-@app.get("/health")
-def health_check():
-    """Endpoint de verificaci√≥n de salud"""
-    return {
-        "status": "healthy",
-        "message": "API running correctly",
-        "environment": "development"
-    }
-
-if __name__ == "__main__":
-    import uvicorn
-    print("Ì∫Ä Iniciando servidor de verificaci√≥n...")
-    print("Ì≥ç Acceder a: http://localhost:8000")
-    print("Ì≥ñ Documentaci√≥n: http://localhost:8000/docs")
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)#!/usr/bin/env python3
-"""
-Mi Primera API FastAPI - Verificaci√≥n de Setup
-Desarrollador: [Tu nombre se llenar√° autom√°ticamente]
-"""
-
-from fastapi import FastAPI
-import os
-import sys
-from datetime import datetime
-
-# Crear instancia de FastAPI
-app = FastAPI(
-    title="Mi Primera API FastAPI",
-    description="API de verificaci√≥n para setup del bootcamp",
-    version="1.0.0"
-)
-
-@app.get("/")
-def home():
-    """Endpoint principal de verificaci√≥n"""
-    return {
-        "message": "¬°Setup completado correctamente!",
-        "project": "FastAPI Bootcamp - Semana 1",
-        "timestamp": datetime.now().isoformat(),
-        "status": "‚úÖ Working perfectly"
-    }
-
-@app.get("/info/setup")
-def info_setup():
-    """Informaci√≥n del entorno de desarrollo"""
-    return {
-        "python_version": sys.version,
-        "python_path": sys.executable,
-        "working_directory": os.getcwd(),
-        "virtual_env": os.environ.get("VIRTUAL_ENV", "No detectado"),
-        "user": os.environ.get("USER", "No detectado"),
-        "hostname": os.environ.get("HOSTNAME", "No detectado")
-    }
-
-@app.get("/health")
-def health_check():
-    """Endpoint de verificaci√≥n de salud"""
-    return {
-        "status": "healthy",
-        "message": "API running correctly",
-        "environment": "development"
-    }
-
-if __name__ == "__main__":
-    import uvicorn
-    print("Ì∫Ä In
-#!/usr/bin/env python3
-"""
-Mi Primera API FastAPI - Verificaci√≥n de Setup
-Desarrollador: [Tu nombre se llenar√° autom√°ticamente]
-"""
-
-from fastapi import FastAPI
-import os
-import sys
-from datetime import datetime
-
-# Crear instancia de FastAPI
-app = FastAPI(
-    title="Mi Primera API FastAPI",
-    description="API de verificaci√≥n para setup del bootcamp",
-    version="1.0.0"
-)
-
-@app.get("/")
-def home():
-    """Endpoint principal de verificaci√≥n"""
-    return {
-        "message": "¬°Setup completado correctamente!",
-        "project": "FastAPI Bootcamp - Semana 1",
-        "timestamp": datetime.now().isoformat(),
-        "status": "‚úÖ Working perfectly"
-    }
-
-@app.get("/info/setup")
-def info_setup():
-    """Informaci√≥n del entorno de desarrollo"""
-    return {
-        "python_version": sys.version,
-        "python_path": sys.executable,
-        "working_directory": os.getcwd(),
-        "virtual_env": os.environ.get("VIRTUAL_ENV", "No detectado"),
-        "user": os.environ.get("USER", "No detectado"),
-        "hostname": os.environ.get("HOSTNAME", "No detectado")
-    }
-
-@app.get("/health")
-def health_check():
-    """Endpoint de verificaci√≥n de salud"""
-    return {
-        "status": "healthy",
-        "message": "API running correctly",
-        "environment": "development"
-    }
-
-if __name__ == "__main__":
-    import uvicorn
-    print("Ì∫Ä Iniciando servidor de verificaci√≥n...")
-    print("Ì≥ç Acceder a: http://localhost:8000")
-    print("Ì≥ñ Documentaci√≥n: http://localhost:8000/docs")
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)#!/usr/bin/env python3
-"""
-Mi Primera API FastAPI - Verificaci√≥n de Setup
-Desarrollador: [Tu nombre se llenar√° autom√°ticamente]
-"""
-
-from fastapi import FastAPI
-import os
-import sys
-from datetime import datetime
-
-# Crear instancia de FastAPI
-app = FastAPI(
-    title="Mi Primera API FastAPI",
-    description="API de verificaci√≥n para setup del bootcamp",
-    version="1.0.0"
-)
-
-@app.get("/")
-def home():
-    """Endpoint principal de verificaci√≥n"""
-    return {
-        "message": "¬°Setup completado correctamente!",
-        "project": "FastAPI Bootcamp - Semana 1",
-        "timestamp": datetime.now().isoformat(),
-        "status": "‚úÖ Working perfectly"
-    }
-
-@app.get("/info/setup")
-def info_setup():
-    """Informaci√≥n del entorno de desarrollo"""
-    return {
-        "python_version": sys.version,
-        "python_path": sys.executable,
-        "working_directory": os.getcwd(),
-        "virtual_env": os.environ.get("VIRTUAL_ENV", "No detectado"),
-        "user": os.environ.get("USER", "No detectado"),
-        "hostname": os.environ.get("HOSTNAME", "No detectado")
-    }
-
-@app.get("/health")
-def health_check():
-    """Endpoint de verificaci√≥n de salud"""
-    return {
-        "status": "healthy",
-        "message": "API running correctly",
-        "environment": "development"
-    }
-
-if __name__ == "__main__":
-    import uvicorn
-    print("Ì∫Ä Iniciando servidor de verificaci√≥n...")
-    print("Ì≥ç Acceder a: http://localhost:8000")
-    print("Ì≥ñ Documentaci√≥n: http://localhost:8000/docs")
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
