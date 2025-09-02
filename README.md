@@ -2,14 +2,14 @@
 cat > README.md << EOF
 # Mi Primera API FastAPI - Bootcamp
 
-**í±¤ Desarrollador**: Valery
-**í³§ Email**: 199391218+valrn00@users.noreply.github.com.
+**ï¿½ï¿½ï¿½ Desarrollador**: Valery
+**ï¿½ï¿½ï¿½ Email**: 199391218+valrn00@users.noreply.github.com.
 **ï¿½ Privacidad**: Email configurado segÃºn mejores prÃ¡cticas de GitHub
-**ï¿½í³… Fecha de creaciÃ³n**: 2025-08-02 16:43:02
-**í³‚ Ruta del proyecto**: /c/Users/Aprendiz/desarrollo-personal/valery-gaona-bootcamp/mi-primera-api-fastapi
-**í²» Equipo de trabajo**: BOGDFPCGMP5693
+**ï¿½ï¿½ï¿½ï¿½ Fecha de creaciÃ³n**: 2025-08-02 16:43:02
+**ï¿½ï¿½ï¿½ Ruta del proyecto**: /c/Users/Aprendiz/desarrollo-personal/valery-gaona-bootcamp/mi-primera-api-fastapi
+**ï¿½ï¿½ï¿½ Equipo de trabajo**: BOGDFPCGMP5693
 
-## í´§ ConfiguraciÃ³n Local
+## ï¿½ï¿½ï¿½ ConfiguraciÃ³n Local
 
 Este proyecto estÃ¡ configurado para trabajo en equipo compartido:
 
@@ -17,7 +17,7 @@ Este proyecto estÃ¡ configurado para trabajo en equipo compartido:
 - **ConfiguraciÃ³n Git local**: Solo para este proyecto
 - **Dependencias independientes**: No afecta otras instalaciones
 
-## íº€ InstalaciÃ³n y EjecuciÃ³n
+## ï¿½ï¿½ï¿½ InstalaciÃ³n y EjecuciÃ³n
 
 ```bash
 # 1. Activar entorno virtual personal
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-## í³ Notas del Desarrollador
+## ï¿½ï¿½ï¿½ Notas del Desarrollador
 
 - **ConfiguraciÃ³n Git**: Local Ãºnicamente, no afecta configuraciÃ³n global
 - **Email de GitHub**: Configurado con email privado para proteger informaciÃ³n personal
@@ -38,7 +38,7 @@ uvicorn main:app --reload --port 8000
 - **Puerto por defecto**: 8000 (cambiar si hay conflictos)
 - **Estado del bootcamp**: Semana 1 - ConfiguraciÃ³n inicial
 
-## í» ï¸ Troubleshooting Personal
+## ï¿½ï¿½ï¿½ï¸ Troubleshooting Personal
 
 - Si el entorno virtual no se activa: `rm -rf venv-personal && python3 -m venv venv-personal`
 - Si hay conflictos de puerto: cambiar --port en uvicorn
@@ -46,14 +46,14 @@ uvicorn main:app --reload --port 8000
 - Si necesitas cambiar el email: usar el email privado de GitHub desde Settings â†’ Emails
 # Mi Primera API FastAPI - Bootcamp
 
-**í±¤ Desarrollador**: Valery
-**í³§ Email**: 199391218+valrn00@users.noreply.github.com.
+**ï¿½ï¿½ï¿½ Desarrollador**: Valery
+**ï¿½ï¿½ï¿½ Email**: 199391218+valrn00@users.noreply.github.com.
 **ï¿½ Privacidad**: Email configurado segÃºn mejores prÃ¡cticas de GitHub
-**ï¿½í³… Fecha de creaciÃ³n**: 2025-08-02 16:43:02
-**í³‚ Ruta del proyecto**: /c/Users/Aprendiz/desarrollo-personal/valery-gaona-bootcamp/mi-primera-api-fastapi
-**í²» Equipo de trabajo**: BOGDFPCGMP5693
+**ï¿½ï¿½ï¿½ï¿½ Fecha de creaciÃ³n**: 2025-08-02 16:43:02
+**ï¿½ï¿½ï¿½ Ruta del proyecto**: /c/Users/Aprendiz/desarrollo-personal/valery-gaona-bootcamp/mi-primera-api-fastapi
+**ï¿½ï¿½ï¿½ Equipo de trabajo**: BOGDFPCGMP5693
 
-## í´§ ConfiguraciÃ³n Local
+## ï¿½ï¿½ï¿½ ConfiguraciÃ³n Local
 
 Este proyecto estÃ¡ configurado para trabajo en equipo compartido:
 
@@ -61,7 +61,7 @@ Este proyecto estÃ¡ configurado para trabajo en equipo compartido:
 - **ConfiguraciÃ³n Git local**: Solo para este proyecto
 - **Dependencias independientes**: No afecta otras instalaciones
 
-## íº€ InstalaciÃ³n y EjecuciÃ³n
+## ï¿½ï¿½ï¿½ InstalaciÃ³n y EjecuciÃ³n
 
 ```bash
 # 1. Activar entorno virtual personal
@@ -74,7 +74,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
 
-## í³ Notas del Desarrollador
+## ï¿½ï¿½ï¿½ Notas del Desarrollador
 
 - **ConfiguraciÃ³n Git**: Local Ãºnicamente, no afecta configuraciÃ³n global
 - **Email de GitHub**: Configurado con email privado para proteger informaciÃ³n personal
@@ -82,10 +82,61 @@ uvicorn main:app --reload --port 8000
 - **Puerto por defecto**: 8000 (cambiar si hay conflictos)
 - **Estado del bootcamp**: Semana 1 - ConfiguraciÃ³n inicial
 
-## í» ï¸ Troubleshooting Personal
+## ï¿½ï¿½ï¿½ï¸ Troubleshooting Personal
 
 - Si el entorno virtual no se activa: `rm -rf venv-personal && python3 -m venv venv-personal`
 - Si hay conflictos de puerto: cambiar --port en uvicorn
 - Si Git no funciona: verificar `git config user.name` y `git config user.email`
 - Si necesitas cambiar el email: usar el email privado de GitHub desde Settings â†’ Emails
+
+# Mi API FastAPI - Semana 2
+
+## Â¿QuÃ© hace?
+
+API mejorada con validaciÃ³n automÃ¡tica de datos y type hints.
+
+## Nuevos Features (Semana 2)
+
+- âœ… Type hints en todas las funciones
+- âœ… ValidaciÃ³n automÃ¡tica con Pydantic
+- âœ… Endpoint POST para crear datos
+- âœ… ParÃ¡metros de ruta (ejemplo: /products/{id})
+- âœ… BÃºsqueda con parÃ¡metros query
+
+## Â¿CÃ³mo ejecutar?
+
+```bash
+pip install fastapi pydantic uvicorn
+uvicorn main:app --reload
+```
+````
+
+## Endpoints principales
+
+- `GET /`: Mensaje de bienvenida
+- `POST /products`: Crear nuevo producto
+- `GET /products`: Ver todos los productos
+- `GET /products/{id}`: Ver producto especÃ­fico
+- `GET /search?name=...`: Buscar productos
+
+## DocumentaciÃ³n
+
+http://127.0.0.1:8000/docs
+
+## Mi progreso
+
+**Semana 1**: API bÃ¡sica con Hello World
+**Semana 2**: API con validaciÃ³n y type hints
+
+## ReflexiÃ³n
+Lo mÃ¡s Ãºtil de esta semana fue aprender a usar Pydantic y los parÃ¡metros de ruta y query. Estos elementos no solo validan los datos de entrada, sino que tambiÃ©n permiten la creaciÃ³n de endpoints mÃ¡s dinÃ¡micos y funcionales, como la bÃºsqueda y el filtrado de productos, que son esenciales en cualquier aplicaciÃ³n del mundo real.
+
+**Â¿Los type hints hacen tu cÃ³digo mÃ¡s claro? Â¿Por quÃ©?**
+Al indicar el tipo de dato esperado para los parÃ¡metros de las funciones, el tipo de dato que devuelven y mejoran la legibilidad
+
+**Â¿CÃ³mo te ayuda Pydantic a crear APIs mÃ¡s robustas?**
+Pydantic ayuda a crear APIs mÃ¡s robustas al proporcionar validaciÃ³n automÃ¡tica de datos. Esto asegura que la informaciÃ³n recibida en los endpoints POST, por ejemplo, cumpla con la estructura y el tipo de dato definidos
+
+**Â¿CÃ³mo mejoraron estos conceptos tu API comparada con Semana 1?**
+Estos conceptos mejoraron significativamente la API al transformarla de una colecciÃ³n de endpoints simples a una aplicaciÃ³n web mÃ¡s profesional y confiable. La validaciÃ³n con Pydantic y los type hints garantizan que los datos sean correctos, mientras que los parÃ¡metros de ruta y query permiten una interacciÃ³n con el usuario mÃ¡s compleja y flexible
 
