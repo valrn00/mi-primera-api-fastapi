@@ -140,3 +140,75 @@ Pydantic ayuda a crear APIs más robustas al proporcionar validación automátic
 **¿Cómo mejoraron estos conceptos tu API comparada con Semana 1?**
 Estos conceptos mejoraron significativamente la API al transformarla de una colección de endpoints simples a una aplicación web más profesional y confiable. La validación con Pydantic y los type hints garantizan que los datos sean correctos, mientras que los parámetros de ruta y query permiten una interacción con el usuario más compleja y flexible
 
+# Mi API FastAPI - Semana 3
+
+## ¿Qué hace?
+
+API mejorada con separación de responsabilidades y uso de servicios.
+
+## Nuevos Features (Semana 3)
+
+- ✅ Separación de lógica en capas: Routers, Models y Services
+- ✅ Uso de servicios para manejar la lógica de negocio
+- ✅ Validación avanzada con Pydantic
+- ✅ Manejo de errores personalizados
+- ✅ Endpoints adicionales para actualizar y eliminar productos
+
+## ¿Cómo ejecutar?
+
+```bash
+pip install fastapi pydantic uvicorn
+uvicorn main:app --reload
+```
+
+## Endpoints principales
+
+- `GET /`: Mensaje de bienvenida
+- `POST /products`: Crear nuevo producto
+- `GET /products`: Ver todos los productos
+- `GET /products/{id}`: Ver producto específico
+- `PUT /products/{id}`: Actualizar producto
+- `DELETE /products/{id}`: Eliminar producto
+- `GET /search?name=...`: Buscar productos
+
+## Documentación
+
+http://127.0.0.1:8000/docs
+
+## Mi progreso
+
+**Semana 1**: API básica con Hello World  
+**Semana 2**: API con validación y type hints  
+**Semana 3**: API con separación de responsabilidades y servicios
+
+# Mi API FastAPI - Semana 4
+
+## ¿Qué hace?
+
+API con integración de bases de datos y pruebas automatizadas.
+
+## Nuevos Features (Semana 4)
+
+- ✅ Conexión a bases de datos SQLite
+- ✅ CRUD completo con SQLAlchemy
+- ✅ Uso de variables de entorno con `.env`
+- ✅ Pruebas automatizadas con Pytest
+- ✅ Separación de esquemas y modelos
+
+## Endpoints principales
+
+- CRUD para productos y categorías
+- Integración con bases de datos SQLite (`libros.db`, `productos.db`)
+
+## Pruebas
+
+```bash
+pytest
+```
+
+## Mi progreso
+
+**Semana 1**: API básica con Hello World  
+**Semana 2**: API con validación y type hints  
+**Semana 3**: API con separación de responsabilidades y servicios  
+**Semana 4**: API con bases de datos
