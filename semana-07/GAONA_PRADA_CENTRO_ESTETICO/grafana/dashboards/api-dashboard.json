@@ -1,0 +1,51 @@
+{
+  "dashboard": {
+    "title": "API Performance - BEAUTY_CLINIC",
+    "panels": [
+      {
+        "title": "Request Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(beauty_requests_total[5m])",
+            "legendFormat": "{{method}} {{endpoint}}"
+          }
+        ]
+      },
+      {
+        "title": "Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(beauty_response_duration_seconds_bucket[5m]))",
+            "legendFormat": "95th percentile"
+          }
+        ]
+      },
+      {
+        "title": "System Resources",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "beauty_cpu_usage_percent",
+            "legendFormat": "CPU Usage"
+          },
+          {
+            "expr": "beauty_memory_usage_bytes / 1024 / 1024",
+            "legendFormat": "Memory (MB)"
+          }
+        ]
+      },
+      {
+        "title": "Citas Creadas",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(beauty_citas_creadas_total[5m])",
+            "legendFormat": "Citas por minuto"
+          }
+        ]
+      }
+    ]
+  }
+}

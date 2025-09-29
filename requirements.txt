@@ -64,3 +64,8 @@ httpx==0.25.0
 pytest-asyncio==0.21.1
 coverage==7.3.2
 pytest-mock==3.12.0
+prometheus-fastapi-instrumentator==6.1.0
+prometheus-client==0.17.1
+psutil==5.9.5
+memory-profiler==0.61.0
+line-profiler==4.1.1
