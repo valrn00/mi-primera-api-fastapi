@@ -1,0 +1,27 @@
+name: SecureBank Deploy to Production
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to staging
+        run: |
+          echo "🚀 Deploying to staging environment for SecureBank..."
+          # Comandos de despliegue específicos (simulados para el dominio)
+          # Ejemplo: docker build -t securebank-api .
+          # docker push securebank-api
+          # kubectl apply -f deployment.yaml
+
+      - name: Health check
+        run: |
+          echo "🏥 Verificando health check para SecureBank..."
+          # curl -f https://api-securebank-yourdomain.com/health
